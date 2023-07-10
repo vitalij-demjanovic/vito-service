@@ -12,14 +12,16 @@ export default function Sidebar() {
     ];
 
     return (
-        <div>
-            <Logo/>
+        <div className='bg-third h-screen rounded-r-xl p-5 group transition duration-3000 ease-out hover:ease-in'>
+            <div className='mb-20 flex justify-center'>
+                <Logo/>
+            </div>
             <nav>
                 {
                     links.map((link, index) =>
-                    <Link key={index} href={link.link} className='flex items-center'>
+                    <Link key={index} href={link.link} className='flex justify-center items-center mb-10 cursor-pointer'>
                         <Image src={link.icon} width={40} height={40} alt='nav'/>
-                        <span className='ml-3.5'>{link.label}</span>
+                        <span className='group-hover:ml-3.5 inline-block w-0 whitespace-nowrap overflow-hidden text-clip group-hover:w-full' >{link.label}</span>
                     </Link>
                     )
                 }

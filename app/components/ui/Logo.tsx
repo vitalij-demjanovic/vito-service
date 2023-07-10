@@ -1,5 +1,5 @@
 import Image from "next/image";
-import vito from "@assets/images/logoW.png";
+import vito from "@assets/images/vito.svg";
 
 export default function Logo() {
     return (
