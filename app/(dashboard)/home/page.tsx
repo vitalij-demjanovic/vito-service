@@ -1,12 +1,9 @@
-import Button from "@/app/components/ui/Button";
+import Input from "@/app/components/ui/Input";
 
 export default function Home(){
     return (
         <div>
-            <Button appearance={'primary'}>
-                Button
-            </Button>
-            <Button appearance={'secondary'}>Button</Button>
+            <Input/>
         </div>
     );
 }
